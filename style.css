@@ -1,0 +1,64 @@
+/* style.css untuk Proyek Mini Bagian B - Galeri Wisata Indonesia */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    padding-top: 70px; /* Jarak agar konten tidak tertutup navbar fixed-top */
+}
+
+/* Navbar Custom dengan efek Glassmorphic agar tetap elegan dan tidak pernah hilang saat di-scroll */
+.custom-navbar {
+    background: rgba(33, 37, 41, 0.95) !important;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+/* Hero Banner */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)), url('Backround.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    padding: 0 1rem;
+}
+
+.search-bar-group {
+    background: white;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 4px;
+}
+
+/* Styling Kartu Destinasi */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+/* Filter Tombol */
+.filter-btn {
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.filter-btn.active {
+    background-color: #0d6efd;
+    color: white;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
